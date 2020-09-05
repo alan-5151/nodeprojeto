@@ -1,0 +1,547 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"sobre",
+				"sobrenome"
+			],
+			[
+				"move",
+				"move_uploaded_file"
+			],
+			[
+				"file_put",
+				"file_put_contents"
+			],
+			[
+				"file_get",
+				"file_get_contents"
+			],
+			[
+				"sessi",
+				"session_start"
+			],
+			[
+				"ac",
+				"action\tAttr"
+			],
+			[
+				"ti",
+				"title"
+			],
+			[
+				"back",
+				"background-color\tproperty"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"max",
+				"max-width"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"in",
+				"inline-block"
+			],
+			[
+				"list-s",
+				"list-style"
+			],
+			[
+				"bt-i",
+				"bt-image-02.jpg\tw:300 h:200"
+			],
+			[
+				"wid",
+				"width\tproperty"
+			],
+			[
+				"backgrou",
+				"background-color\tproperty"
+			],
+			[
+				"text-a",
+				"text-align\tproperty"
+			],
+			[
+				"backgro",
+				"background-image\tproperty"
+			],
+			[
+				"backgr",
+				"background-color\tproperty"
+			],
+			[
+				"hei",
+				"height\tproperty"
+			],
+			[
+				"u",
+				"url()\tbackground-image"
+			],
+			[
+				"bl",
+				"block\tdisplay"
+			],
+			[
+				"block",
+				"inline-block\tdisplay"
+			],
+			[
+				"tex",
+				"text-orientation\tproperty"
+			],
+			[
+				"margin",
+				"margin-right\tproperty"
+			],
+			[
+				"borde",
+				"border-radius\tproperty"
+			],
+			[
+				"bor",
+				"border\tproperty"
+			],
+			[
+				"backgo",
+				"background-color"
+			],
+			[
+				"im",
+				"images"
+			],
+			[
+				"margi",
+				"margin-bottom\tproperty"
+			],
+			[
+				"marg",
+				"margin-bottom\tproperty"
+			],
+			[
+				"bord",
+				"border-radius\tproperty"
+			],
+			[
+				"sr",
+				"script\t<script>"
+			],
+			[
+				"text",
+				"text-decoration"
+			],
+			[
+				"ht",
+				"html5\tSimple HTML5 Boilerplate"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "app.js",
+			"settings":
+			{
+				"buffer_size": 343,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "routes/index.js",
+			"settings":
+			{
+				"buffer_size": 423,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "views/home.mst",
+			"settings":
+			{
+				"buffer_size": 368,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"mustache",
+				"Set Syntax: HTML (Mustache)"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"gu",
+				"Gulp"
+			],
+			[
+				"gul",
+				"Gulp"
+			],
+			[
+				"gulp",
+				"Gulp"
+			],
+			[
+				"list pac",
+				"Package Control: List Packages"
+			],
+			[
+				"settings",
+				"Preferences: Settings"
+			],
+			[
+				"Package Control: install ",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: install",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Install Package Control"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 136.0,
+		"history":
+		[
+			"dir",
+			"import urllib.request,os,hashlib; "
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/home/alan/projetos/nodeprojeto",
+		"/home/alan/projetos/nodeprojeto/routes",
+		"/home/alan/projetos/nodeprojeto/views"
+	],
+	"file_history":
+	[
+		"/home/alan/projetos/nodeprojeto/routes/index.js",
+		"/home/alan/projetos/nodeprojeto/server.js",
+		"/home/alan/projetos/nodeprojeto/views/home.mst",
+		"/home/alan/projetos/nodeprojeto/variables.env",
+		"/opt/lampp/htdocs/projetos/_MODELO/fotos.html",
+		"/opt/lampp/htdocs/projetos/_MODELO/amigos.html",
+		"/opt/lampp/htdocs/php-tips/t.php",
+		"/opt/lampp/htdocs/php-tips/recebe.php",
+		"/opt/lampp/htdocs/php-tips/limpa.inc.php",
+		"/opt/lampp/htdocs/php-tips/index.php",
+		"/opt/lampp/htdocs/php-tips/lista.txt",
+		"/opt/lampp/htdocs/php-tips/tt.txt",
+		"/opt/lampp/htdocs/php-tips/ep02/exemples/read.php",
+		"/opt/lampp/htdocs/php-tips/teste.php",
+		"/opt/lampp/htdocs/php-tips/texto.html",
+		"/opt/lampp/htdocs/php-tips/texto.txt",
+		"/opt/lampp/htdocs/php-tips/nbproject/Lorem ipsum dolor sit amet, consectetur adipisicin",
+		"/home/alan/projetos/docker/primeiro/www/index.php",
+		"/home/alan/projetos/docker/primeiro/docker-compose.yml",
+		"/home/alan/projetos/webp/package.json",
+		"/home/alan/projetos/webp/dist/index.html",
+		"/home/alan/projetos/webp/dist/pedido.html",
+		"/home/alan/projetos/webp/webpack.config.js",
+		"/home/alan/projetos/webp/dist/assets/pedido.html",
+		"/home/alan/projetos/webp/src/css/teste.scss",
+		"/home/alan/projetos/webp/src/index.js",
+		"/home/alan/projetos/webp/src/css/pedido.scss",
+		"/home/alan/projetos/webp/src/pedido.js",
+		"/home/alan/projetos/webp/src/components/index.js",
+		"/home/alan/projetos/webp/src/css/style.css",
+		"/home/alan/projetos/webp/src/components/style.css",
+		"/home/alan/projetos/webp/src/style.css",
+		"/home/alan/projetos/webp/src/webpack.config.js",
+		"/home/alan/projetos/sass/assets/scss/_reset.scss",
+		"/home/alan/projetos/sass/assets/scss/style.scss",
+		"/home/alan/projetos/sass/index.html",
+		"/home/alan/projetos/sass/assets/css/reset.css",
+		"/home/alan/projetos/sass/assets/scss/reset.scss",
+		"/home/alan/projetos/sass/assets/scss/base.scss",
+		"/home/alan/projetos/bootstrap/src/pagina2.html",
+		"/home/alan/projetos/bootstrap/src/pagina.html",
+		"/home/alan/projetos/bootstrap/src/index.html",
+		"/home/alan/projetos/bootstrap/src/assets/js/script.js",
+		"/home/alan/projetos/bootstrap/src/filmes.html",
+		"/home/alan/projetos/bootstrap/src/assets/css/style.css",
+		"/home/alan/projetos/conquer/src/assets/css/style.css",
+		"/home/alan/projetos/conquer/src/index.html",
+		"/home/alan/projetos/conquer/src/gulpfile.js",
+		"/home/alan/projetos/conquer/src/filmes.html",
+		"/home/alan/projetos/conquer/sublime-gulp.log",
+		"/home/alan/projetos/bootstrap/gulpfile.js",
+		"/home/alan/projetos/conquer/src/assets/css/_suporte.scss",
+		"/home/alan/projetos/conquer/src/assets/css/_variaveis.scss",
+		"/home/alan/projetos/conquer/src/assets/css/principa.scss",
+		"/home/alan/projetos/conquer/gulpfile.js",
+		"/home/alan/projetos/bootstrap/src/assets/css/_variaveis.scss",
+		"/home/alan/projetos/bootstrap/src/assets/css/principal.scss",
+		"/home/alan/projetos/curso-gulp/gulpfile.js",
+		"/home/alan/projetos/bootstrap/dist/index.html",
+		"/home/alan/projetos/bootstrap/sublime-gulp.log",
+		"/home/alan/projetos/bootstrap/dist/css/principal.css",
+		"/home/alan/projetos/curso-gulp/src/index.html",
+		"/home/alan/projetos/curso-gulp/dist/index.html",
+		"/home/alan/projetos/bootstrap/src/assets/css/_suporte.scss",
+		"/home/alan/projetos/bootstrap/package.json",
+		"/home/alan/projetos/curso-gulp/src/pagina2.html",
+		"/home/alan/projetos/curso-gulp/src/pagina3.html",
+		"/home/alan/projetos/curso-gulp/src/assets/css/style.scss",
+		"/home/alan/projetos/curso-gulp/src/pagina.html",
+		"/home/alan/projetos/curso-gulp/dist/pagina3.html",
+		"/home/alan/projetos/curso-gulp/dist/pagina.html",
+		"/home/alan/projetos/curso-gulp/sublime-gulp.log",
+		"/home/alan/projetos/curso-gulp/dist/assets/css/style.css",
+		"/home/alan/projetos/curso-gulp/node_modules/gulp/README.md",
+		"/home/alan/projetos/curso-gulp/node_modules/bach/README.md",
+		"/home/alan/projetos/curso-gulp/src/html5.html",
+		"/home/alan/projetos/curso-gulp/src/assets/css/Documento sem título",
+		"/home/alan/projetos/curso-gulp/srcc/html5.html",
+		"/home/alan/projetos/curso-gulp/package.json",
+		"/home/alan/projetos/curso-gulp/package-lock.json",
+		"/opt/lampp/htdocs/projetos/git-2/teste.html",
+		"/opt/lampp/htdocs/projetos/git-2/index.php"
+	],
+	"find":
+	{
+		"height": 29.0
+	},
+	"find_in_files":
+	{
+		"height": 92.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "app.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 343,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								343,
+								343
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "routes/index.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 423,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								359,
+								359
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "views/home.mst",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 368,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								348,
+								348
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Mustache/syntax/mustache.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 29.0
+	},
+	"input":
+	{
+		"height": 29.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "package.sublime-project",
+	"replace":
+	{
+		"height": 54.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 167.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

@@ -1,0 +1,38 @@
+{{> header}}
+	
+
+
+	<h1>Bem-vindo {{nome}}</h1>
+	<p>Todos São bem-vindos em {{cidade}}!...</p>
+	<hr />
+	{{#mostrar}}
+	{{nome}} você é de {{cidade}}-{{estado}}?
+	{{/mostrar}}
+	<hr />
+	<ul>
+
+		{{#ingredientes}}
+		<li>{{nome}} - {{Qt}}</li>
+		{{/ingredientes}}
+
+	</ul>
+	{{^ingredientes}}
+	<p>Não há ingrediente nesse bolo. </p>
+	{{/ingredientes}}
+	<hr />
+	<ul>
+		{{#interesses}}
+		<li>{{.}}</li>
+		{{/interesses}}
+
+	</ul>
+	<hr />
+	{{{teste}}}
+
+	{{! Ao coloxar 3 chaves tgs htmls são interpretadas }}
+
+
+
+	{{! comentário  }}
+
+{{> footer}}
