@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<title> {{h.defaultPageTitle}} {{pageTitle}}</title>
 	<meta charset="utf-8" >
 	<title>NODE.JS</title>
 </head>

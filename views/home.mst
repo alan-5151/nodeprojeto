@@ -1,38 +1,45 @@
 {{> header}}
-	
 
 
-	<h1>Bem-vindo {{nome}}</h1>
-	<p>Todos São bem-vindos em {{cidade}}!...</p>
-	<hr />
-	{{#mostrar}}
-	{{nome}} você é de {{cidade}}-{{estado}}?
-	{{/mostrar}}
-	<hr />
-	<ul>
+<ul>
+	{{#h.menu}}
+	<li><a href="{{slug}}">{{name}}</a></li>
+	{{/h.menu}}
+</ul>
 
-		{{#ingredientes}}
-		<li>{{nome}} - {{Qt}}</li>
-		{{/ingredientes}}
+<hr />
 
-	</ul>
-	{{^ingredientes}}
-	<p>Não há ingrediente nesse bolo. </p>
+<h1>Bem-vindo {{nome}}</h1>
+<p>Todos São bem-vindos em {{cidade}}!...</p>
+<hr />
+{{#mostrar}}
+{{nome}} você é de {{cidade}}-{{estado}}?
+{{/mostrar}}
+<hr />
+<ul>
+
+	{{#ingredientes}}
+	<li>{{nome}} - {{Qt}}</li>
 	{{/ingredientes}}
-	<hr />
-	<ul>
-		{{#interesses}}
-		<li>{{.}}</li>
-		{{/interesses}}
 
-	</ul>
-	<hr />
-	{{{teste}}}
+</ul>
+{{^ingredientes}}
+<p>Não há ingrediente nesse bolo. </p>
+{{/ingredientes}}
+<hr />
+<ul>
+	{{#interesses}}
+	<li>{{.}}</li>
+	{{/interesses}}
 
-	{{! Ao coloxar 3 chaves tgs htmls são interpretadas }}
+</ul>
+<hr />
+{{{teste}}}
+
+{{! Ao colocar 3 chaves tags html são interpretadas }}
 
 
 
-	{{! comentário  }}
+{{! comentário  }}
 
 {{> footer}}

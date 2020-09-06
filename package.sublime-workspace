@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"inl",
+				"inline-block\tdisplay"
+			],
+			[
 				"sobre",
 				"sobrenome"
 			],
@@ -148,29 +152,19 @@
 	"buffers":
 	[
 		{
-			"file": "app.js",
-			"settings":
-			{
-				"buffer_size": 343,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "routes/index.js",
-			"settings":
-			{
-				"buffer_size": 423,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
 			"file": "views/home.mst",
 			"settings":
 			{
-				"buffer_size": 368,
+				"buffer_size": 593,
 				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "views/login.mst",
+			"settings":
+			{
+				"buffer_size": 142,
 				"line_ending": "Unix"
 			}
 		}
@@ -187,8 +181,16 @@
 		"selected_items":
 		[
 			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
 				"mustache",
 				"Set Syntax: HTML (Mustache)"
+			],
+			[
+				"",
+				"Package Control: Install Package"
 			],
 			[
 				"install",
@@ -250,14 +252,23 @@
 	"expanded_folders":
 	[
 		"/home/alan/projetos/nodeprojeto",
+		"/home/alan/projetos/nodeprojeto/controllers",
 		"/home/alan/projetos/nodeprojeto/routes",
 		"/home/alan/projetos/nodeprojeto/views"
 	],
 	"file_history":
 	[
-		"/home/alan/projetos/nodeprojeto/routes/index.js",
-		"/home/alan/projetos/nodeprojeto/server.js",
+		"/home/alan/projetos/nodeprojeto/views/login.mst",
 		"/home/alan/projetos/nodeprojeto/views/home.mst",
+		"/home/alan/projetos/nodeprojeto/helpers.js",
+		"/home/alan/projetos/nodeprojeto/controllers/homeController.js",
+		"/home/alan/projetos/nodeprojeto/controllers/userController.js",
+		"/home/alan/projetos/nodeprojeto/routes/index.js",
+		"/home/alan/projetos/nodeprojeto/app.js",
+		"/home/alan/projetos/nodeprojeto/views/user/login.mst",
+		"/home/alan/projetos/nodeprojeto/views/partials/header.mst",
+		"/home/alan/projetos/nodeprojeto/views/partials/footer.mst",
+		"/home/alan/projetos/nodeprojeto/server.js",
 		"/home/alan/projetos/nodeprojeto/variables.env",
 		"/opt/lampp/htdocs/projetos/_MODELO/fotos.html",
 		"/opt/lampp/htdocs/projetos/_MODELO/amigos.html",
@@ -371,58 +382,29 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "app.js",
+					"file": "views/home.mst",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 343,
+						"buffer_size": 593,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								343,
-								343
+								94,
+								94
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "routes/index.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 423,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								359,
-								359
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
-							"translate_tabs_to_spaces": false
+							"syntax": "Packages/HTML Mustache/Syntaxes/HTMLMustache.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -432,31 +414,31 @@
 					"type": "text"
 				},
 				{
-					"buffer": 2,
-					"file": "views/home.mst",
-					"semi_transient": false,
+					"buffer": 1,
+					"file": "views/login.mst",
+					"semi_transient": true,
 					"settings":
 					{
-						"buffer_size": 368,
+						"buffer_size": 142,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								348,
-								348
+								0,
+								0
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Mustache/syntax/mustache.sublime-syntax"
+							"syntax": "Packages/HTML Mustache/Syntaxes/HTMLMustache.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 0,
 					"type": "text"
 				}
 			]
@@ -539,7 +521,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 167.0,
+	"side_bar_width": 257.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
