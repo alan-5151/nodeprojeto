@@ -11,26 +11,18 @@
 <h2>Bem-vindo você também {{userInfo.name}}! (enviado via middleware)</h2>
 
 <hr />
-<ul>
 
-<div style="padding:15px; margin: 15px; background-color: #eee">
 {{#posts}}
+<div class="post">
+	{{#photo}}
+	<img src="/media/{{photo}}" alt="" />
+	{{/photo}}
 <h4><a href="/post/{{slug}}">{{title}}</a></h4>
 <p>{{body}}</p>
 <a href="/post/{{slug}}/edit">[ Editar ]</a>
-<hr />
-{{/posts}}
 </div>
+{{/posts}}
 
-
-	{{#ingredientes}}
-	<li>{{nome}} - {{Qt}}</li>
-	{{/ingredientes}}
-
-</ul>
-{{^ingredientes}}
-<p>Não há ingrediente nesse bolo. </p>
-{{/ingredientes}}
 <hr />
 <ul>
 	{{#interesses}}
