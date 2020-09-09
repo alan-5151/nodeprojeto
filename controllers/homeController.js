@@ -1,4 +1,13 @@
-exports.index = (req, res)=>{
+const mongoose = require('mongoose');
+const Post = mongoose.model('Post');
+
+exports.userMiddleware = (req, res, next) => {
+	let info = {name:'Edmilson', id:123};
+	req.userInfo = info;
+	next();
+}
+
+exports.index = async (req, res)=>{
 	let obj = {
 		nome:req.query.nome,
 		cidade:req.query.cidade,
@@ -12,9 +21,14 @@ exports.index = (req, res)=>{
 		],
 		interesses:['node','js','php','react'],
 		teste:'<strong>Testando negrito</strong>',
-		pageTitle: ' | HOME' 
+		pageTitle: ' | HOME',
+		userInfo:req.userInfo,
+		posts:[]
 
-	}; 
+	};  
+
+const posts = await Post.find();
+obj.posts = posts;
 
 	res.render('home', obj);
-}
+}  

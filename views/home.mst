@@ -1,22 +1,27 @@
 {{> header}}
 
 
-<ul>
-	{{#h.menu}}
-	<li><a href="{{slug}}">{{name}}</a></li>
-	{{/h.menu}}
-</ul>
-
-<hr />
-
 <h1>Bem-vindo {{nome}}</h1>
 <p>Todos São bem-vindos em {{cidade}}!...</p>
 <hr />
 {{#mostrar}}
 {{nome}} você é de {{cidade}}-{{estado}}?
 {{/mostrar}}
+
+<h2>Bem-vindo você também {{userInfo.name}}! (enviado via middleware)</h2>
+
 <hr />
 <ul>
+
+<div style="padding:15px; margin: 15px; background-color: #eee">
+{{#posts}}
+<h4><a href="/post/{{slug}}">{{title}}</a></h4>
+<p>{{body}}</p>
+<a href="/post/{{slug}}/edit">[ Editar ]</a>
+<hr />
+{{/posts}}
+</div>
+
 
 	{{#ingredientes}}
 	<li>{{nome}} - {{Qt}}</li>
