@@ -2,7 +2,16 @@
 
 <h2> Editar Post </h2>
 
-<form method="POST">
+<form method="POST" enctype="multipart/form-data">
+	<label>
+		Imagem:
+		<input type="file" name="photo" />
+		{{#post.photo}}
+		<img src="/media/{{post.photo}}" width="150" />
+		<input type="hidden" name="oldPhoto" value="{{post.photo}}" />
+		{{/post.photo}}
+	</label>
+	<br />
 	<label>
 		<input type="text" name="title" value="{{post.title}}" /><br />
 	</label>
@@ -13,6 +22,7 @@
 		Tags: <small>(Separe as tags por vírgulas)</small>  <br />
 		<input type="text" name="tags" value="{{post.tags}}" /><br /><br />
 	</label>
+	<input type="hidden" name="oldSlug" value="{{post.slug}}" />
 	<input type="submit" value="Editar >>>" />
 
 </form> 

@@ -1,30 +1,38 @@
-const mongoose = require('mongoose');
-const slug = require('slug');
+const mongoose = require("mongoose");
+const slug = require("slug");
 
 mongoose.Promise = global.Promise;
 
 const postSchema = new mongoose.Schema({
-	photo:String,
-	title:{
-		type:String,
-		trim:true,
-		required:'Campo obrigatório!'
+	oldSlug: String,
+	photo: String,
+	title: {
+		type: String,
+		trim: true,
+		required: "Campo obrigatório!",
 	},
-	slug:String,
-	body:{
-		type:String,
-		trim:true,
-		required:'Campo orbigatório!'
+	slug: String,
+	body: {
+		type: String,
+		trim: true,
+		required: "Campo orbigatório!",
 	},
-	tags:[String]
+	tags: [String],
 });
 
-postSchema.pre('save', function(next){
-	if (this.isModified('title')) {
-		this.slug = slug(this.title, {lower:true});
+postSchema.pre("save", function (next) {
+	if (this.isModified("title")) {
+		this.slug = slug(this.title + "-" + `${Date.now()}`, { lower: true });
 	}
 	next();
 });
- 
-module.exports = mongoose.model('Post', postSchema); 
 
+postSchema.statics.getTagsList = function () {
+	return this.aggregate([
+		{ $unwind: "$tags" },
+		{ $group: { _id: "$tags", count: { $sum: 1 } } },
+		{ $sort: { count: -1 } },
+	]);
+};
+
+module.exports = mongoose.model("Post", postSchema);

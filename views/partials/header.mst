@@ -28,4 +28,8 @@
 	<div class="warning">{{.}}</div>
 	{{/info}}
 
+	{{#user}}
+	Olá, {{user.name}} !
+	{{/user}}
+
 	{{/flashes}}

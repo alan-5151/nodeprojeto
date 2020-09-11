@@ -4,6 +4,26 @@
 		"selected_items":
 		[
 			[
+				"co",
+				"columns\tproperty"
+			],
+			[
+				"post",
+				"postController"
+			],
+			[
+				"cookie",
+				"cookieParser"
+			],
+			[
+				"met",
+				"method\tAttr"
+			],
+			[
+				"hea",
+				"header\t<header>"
+			],
+			[
 				"inl",
 				"inline-block\tdisplay"
 			],
@@ -152,19 +172,31 @@
 	"buffers":
 	[
 		{
-			"file": "views/home.mst",
+			"file": "controllers/homeController.js",
 			"settings":
 			{
-				"buffer_size": 593,
+				"buffer_size": 1091,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "views/login.mst",
+			"contents": "Package Control Messages\n========================\n\nJsPrettier\n----------\n\n  ┌────────────────────────────────────────────────────────────────────────────┐\n  │                     _     ____           _   _   _                         │\n  │                    | |___|  _ \\ _ __ ___| |_| |_(_) ___ _ __               │\n  │                 _  | / __| |_) | '__/ _ \\ __| __| |/ _ \\ '__|              │\n  │                | |_| \\__ \\  __/| | |  __/ |_| |_| |  __/ |                 │\n  │                 \\___/|___/_|   |_|  \\___|\\__|\\__|_|\\___|_|                 │\n  │                                                                            │\n  └────────────────────────────────────────────────────────────────────────────┘\n  \n  JsPrettier is a Sublime Text Plug-in for Prettier, the opinionated code formatter.\n  \n  ## Install Prettier\n  \n  If you installed Prettier (using the yarn or npm command below), you're all set... otherwise:\n  \n  If you've already installed Prettier (using a command below), you're all set... otherwise:\n  \n      # yarn (local):\n      yarn add prettier --dev\n  \n      # yarn (global):\n      yarn global add prettier\n  \n      # npm (local):\n      npm install --save-dev prettier\n  \n      # npm (global):\n      npm install --global prettier\n  \n  ## Usage\n  \n  There are three available options to format code:\n  \n  1. Command Palette: From the command palette (ctrl/cmd + shift + p), type \"JsPrettier Format Code\".\n  2. Context Menu: Right-click anywhere in the file to bring up the context menu and select \"JsPrettier Format Code\".\n  3. Key Binding: There is no default key binding to run Prettier,\n     see https://github.com/jonlabelle/SublimeJsPrettier#custom-key-binding to add your own.\n  \n  ## Help\n  \n  For additional help including reporting issues, please visit the JsPrettier\n  home page at https://github.com/jonlabelle/SublimeJsPrettier.\n  \n  ## Author\n  \n  Jon LaBelle\n  \n  ## License\n  \n  The MIT License (MIT)\n  \n  Copyright (c) 2017-2019 Jon LaBelle\n",
 			"settings":
 			{
-				"buffer_size": 142,
+				"buffer_size": 1991,
+				"line_ending": "Unix",
+				"name": "Package Control Messages",
+				"read_only": true,
+				"scratch": true
+			}
+		},
+		{
+			"file": "models/Post.js",
+			"settings":
+			{
+				"buffer_size": 743,
+				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		}
@@ -253,23 +285,43 @@
 	[
 		"/home/alan/projetos/nodeprojeto",
 		"/home/alan/projetos/nodeprojeto/controllers",
+		"/home/alan/projetos/nodeprojeto/handlers",
+		"/home/alan/projetos/nodeprojeto/middlewares",
+		"/home/alan/projetos/nodeprojeto/models",
+		"/home/alan/projetos/nodeprojeto/public",
+		"/home/alan/projetos/nodeprojeto/public/assets",
+		"/home/alan/projetos/nodeprojeto/public/assets/css",
+		"/home/alan/projetos/nodeprojeto/public/media",
 		"/home/alan/projetos/nodeprojeto/routes",
-		"/home/alan/projetos/nodeprojeto/views"
+		"/home/alan/projetos/nodeprojeto/views",
+		"/home/alan/projetos/nodeprojeto/views/partials"
 	],
 	"file_history":
 	[
-		"/home/alan/projetos/nodeprojeto/views/login.mst",
+		"/home/alan/.config/sublime-text-3/Packages/User/JsPrettier.sublime-settings",
 		"/home/alan/projetos/nodeprojeto/views/home.mst",
-		"/home/alan/projetos/nodeprojeto/helpers.js",
-		"/home/alan/projetos/nodeprojeto/controllers/homeController.js",
-		"/home/alan/projetos/nodeprojeto/controllers/userController.js",
+		"/home/alan/.config/sublime-text-3/Packages/JsPrettier/JsPrettier.sublime-settings",
+		"/home/alan/projetos/nodeprojeto/views/postEdit.mst",
+		"/home/alan/projetos/nodeprojeto/middlewares/imageMiddleware.js",
+		"/home/alan/projetos/nodeprojeto/controllers/postController.js",
 		"/home/alan/projetos/nodeprojeto/routes/index.js",
-		"/home/alan/projetos/nodeprojeto/app.js",
-		"/home/alan/projetos/nodeprojeto/views/user/login.mst",
-		"/home/alan/projetos/nodeprojeto/views/partials/header.mst",
-		"/home/alan/projetos/nodeprojeto/views/partials/footer.mst",
 		"/home/alan/projetos/nodeprojeto/server.js",
+		"/home/alan/projetos/nodeprojeto/views/postAdd.mst",
+		"/home/alan/projetos/nodeprojeto/models/Post.js",
+		"/home/alan/projetos/nodeprojeto/app.js",
+		"/home/alan/projetos/nodeprojeto/views/partials/header.mst",
+		"/home/alan/projetos/nodeprojeto/public/assets/css/template.css",
+		"/home/alan/projetos/nodeprojeto/views/view.mst",
+		"/home/alan/projetos/nodeprojeto/controllers/homeController.js",
+		"/home/alan/projetos/nodeprojeto/node_modules/mongodb/lib/core/sessions.js",
 		"/home/alan/projetos/nodeprojeto/variables.env",
+		"/home/alan/projetos/nodeprojeto/helpers.js",
+		"/home/alan/projetos/nodeprojeto/views/404.mst",
+		"/home/alan/projetos/nodeprojeto/handlers/errorHandler.js",
+		"/home/alan/projetos/nodeprojeto/views/login.mst",
+		"/home/alan/projetos/nodeprojeto/controllers/userController.js",
+		"/home/alan/projetos/nodeprojeto/views/user/login.mst",
+		"/home/alan/projetos/nodeprojeto/views/partials/footer.mst",
 		"/opt/lampp/htdocs/projetos/_MODELO/fotos.html",
 		"/opt/lampp/htdocs/projetos/_MODELO/amigos.html",
 		"/opt/lampp/htdocs/php-tips/t.php",
@@ -351,7 +403,7 @@
 	],
 	"find":
 	{
-		"height": 29.0
+		"height": 34.0
 	},
 	"find_in_files":
 	{
@@ -365,6 +417,9 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"if",
+			"media",
+			"file"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -387,24 +442,25 @@
 			[
 				{
 					"buffer": 0,
-					"file": "views/home.mst",
+					"file": "controllers/homeController.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 593,
+						"buffer_size": 1091,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								94,
-								94
+								231,
+								231
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/HTML Mustache/Syntaxes/HTMLMustache.tmLanguage"
+							"syntax": "Packages/JavaScriptNext - ES6 Syntax/JavaScriptNext.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -415,30 +471,61 @@
 				},
 				{
 					"buffer": 1,
-					"file": "views/login.mst",
-					"semi_transient": true,
+					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 142,
+						"buffer_size": 1991,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								1542,
+								1542
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/HTML Mustache/Syntaxes/HTMLMustache.tmLanguage"
+							"auto_indent": false,
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_width": 2,
+							"word_wrap": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 570.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "models/Post.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 743,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								743,
+								743
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScriptNext - ES6 Syntax/JavaScriptNext.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 456.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
 					"type": "text"
 				}
 			]
@@ -446,7 +533,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 29.0
+		"height": 28.0
 	},
 	"input":
 	{
@@ -483,7 +570,7 @@
 	"project": "package.sublime-project",
 	"replace":
 	{
-		"height": 54.0
+		"height": 52.0
 	},
 	"save_all_on_build": true,
 	"select_file":

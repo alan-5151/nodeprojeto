@@ -1,20 +1,20 @@
-const multer = require('multer');
-const jimp = require('jimp');
-const uuid = require('uuid');
+const multer = require("multer");
+const jimp = require("jimp");
+const uuid = require("uuid");
+const fs = require("fs");
 
 const multerOptions = {
-	storage:multer.memoryStorage(),
-	fileFilter:(req, file, next) => {
-		const allowed = ['image/jpeg', 'image/jpg', 'image/png'];
+	storage: multer.memoryStorage(),
+	fileFilter: (req, file, next) => {
+		const allowed = ["image/jpeg", "image/jpg", "image/png"];
 		if (allowed.includes(file.mimetype)) {
 			next(null, true);
-
 		} else {
-			next({message:'Formato de arquivo não permitido'}, false);
+			next({ message: "Formato de arquivo não permitido" }, false);
 		}
-	}
+	},
 };
-exports.upload = multer(multerOptions).single('photo');
+exports.upload = multer(multerOptions).single("photo");
 
 exports.resize = async (req, res, next) => {
 	if (!req.file) {
@@ -22,7 +22,17 @@ exports.resize = async (req, res, next) => {
 		return;
 	}
 
-	const ext = req.file.mimetype.split('/')[1];
+	// teste unlink
+	fs.unlink("./public/media/" + req.body.oldPhoto, (err) => {
+		if (err) {
+			console.log("Falha ao deletar imagem:" + err);
+		} else {
+			console.log("Imagem deletada com sucesso");
+		}
+	});
+	// fim teste unlink
+
+	const ext = req.file.mimetype.split("/")[1];
 	let filename = `${uuid.v4()}.${ext}`;
 	req.body.photo = filename;
 
@@ -32,4 +42,3 @@ exports.resize = async (req, res, next) => {
 	await photo.write(`./public/media/${filename}`);
 	next();
 };
-
