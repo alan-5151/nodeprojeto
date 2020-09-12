@@ -28,15 +28,25 @@ app.use(
 );
 app.use(flash());
 
+app.use(passport.initialize());
+app.use(passport.session());
+
 app.use((req, res, next) => {
-	res.locals.h = helpers;
+	res.locals.h = { ...helpers };
 	res.locals.flashes = req.flash();
 	res.locals.user = req.user;
+
+	if (req.isAuthenticated()) {
+		// filtrar para guest ou logged
+		res.locals.h.menu = res.locals.h.menu.filter((i) => i.logged);
+	} else {
+		// filtrar menu para guest
+		res.locals.h.menu = res.locals.h.menu.filter((i) => i.guest);
+	}
+
 	next();
 });
 
-app.use(passport.initialize());
-app.use(passport.session());
 const User = require("./models/User");
 passport.use(new localStrategy(User.authenticate()));
 passport.serializeUser(User.serializeUser());

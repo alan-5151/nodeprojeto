@@ -1,28 +1,26 @@
-const mongoose = require('mongoose');
+const mongoose = require("mongoose");
 
-
-require('dotenv').config({path:'variables.env'});
+require("dotenv").config({ path: "variables.env" });
 
 // COnexão ao banco de dados MOngoDB
-mongoose.connect(process.env.DATABASE, { 
+mongoose.connect(process.env.DATABASE, {
 	useUnifiedTopology: true,
 	useNewUrlParser: true,
 	useCreateIndex: true,
-	useFindAndModify: false }
-	);
+	useFindAndModify: false,
+});
 mongoose.Promise = global.Promise;
-mongoose.connection.on('error', (error)=>{
-	console.error("ERRO: "+error.message);
+mongoose.connection.on("error", (error) => {
+	console.error("ERRO: " + error.message);
 });
 
 // Carregando models
-require('./models/Post');
+require("./models/Post");
 
-const app = require('./app');
+const app = require("./app");
 
-app.set('port', process.env.PORT || 7777);  
+app.set("port", process.env.PORT || 7777);
 
-const server = app.listen(app.get('port'), ()=>{
-	console.log("Servidor rodando na porta: "+server.address().port);
-});    
-
+const server = app.listen(app.get("port"), () => {
+	console.log("Servidor rodando na porta: " + server.address().port);
+});

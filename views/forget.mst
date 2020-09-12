@@ -1,0 +1,17 @@
+{{> header}}
+
+<h1>Esqueceu a senha?</h1>
+
+<form method="POST">
+	<label>
+		Digite seu Email:
+		<input type="email" name="email" />
+	</label>
+	<br />
+	
+	<input type="submit" value=" Continuar >>> " />
+</form>
+
+
+
+{{> footer}}

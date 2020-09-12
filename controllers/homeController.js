@@ -26,15 +26,17 @@ exports.index = async (req, res) => {
 		posts: [],
 		tags: [],
 		tag: "",
+		edita: [],
+		edit: false,
 	};
 
-	console.log(req.user);
+	// console.log(req.user);
 
 	obj.tag = req.query.t;
 	const postFilter = typeof obj.tag != "undefined" ? { tags: obj.tag } : {};
 
 	const tagsPromise = Post.getTagsList();
-	const postsPromise = Post.find(postFilter);
+	const postsPromise = Post.find(postFilter).populate("author");
 	const [tags, posts] = await Promise.all([tagsPromise, postsPromise]);
 
 	for (let i in tags) {
@@ -43,8 +45,21 @@ exports.index = async (req, res) => {
 		}
 	}
 
+	if (req.query._id && req.query._id == req.query.author._id) {
+		edit: true;
+		obj.edit = edit;
+	}
+
 	obj.tags = tags;
 	obj.posts = posts;
+
+	if (req.isAuthenticated()) {
+		for (let i in posts) {
+			if (posts[i].author._id.toString() == req.user._id.toString()) {
+				posts[i].canEdit = true;
+			}
+		}
+	}
 
 	res.render("home", obj);
 };

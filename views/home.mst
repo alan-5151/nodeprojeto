@@ -1,7 +1,7 @@
 {{> header}}
 
 
-<h1>Bem-vindo {{nome}}</h1>
+<h1>Bem-vindo {{user.name}}</h1>
 <!--
 <p>Todos São bem-vindos em {{cidade}}!...</p>
 <hr />
@@ -11,10 +11,11 @@
 
 <h2>Bem-vindo você também {{userInfo.name}}! (enviado via middleware)</h2>
 // -->
+
 <div class="tags">
 {{#tags}}
 
-<div class="tag {{class}}"><a href="/?t={{_id}}">{{_id}}( {{count}} )</a></div>
+<div class="tag {{class}}"><a href="/?t={{_id}}">{{_id}}</a></div>
 
 {{/tags}}
 
@@ -28,12 +29,18 @@
 	<img src="/media/{{photo}}" alt="" />
 	{{/photo}}
 <h4><a href="/post/{{slug}}">{{title}}</a></h4>
+<cite>Autor: {{author.name}}</cite>
 <p>{{body}}</p>
+{{#canEdit}}
 <a href="/post/{{slug}}/edit">[ Editar ]</a>
+{{/canEdit}}
 </div>
 {{/posts}}
 
 <hr />
+<br />
+
+<!-- //
 <ul>
 	{{#interesses}}
 	<li>{{.}}</li>
@@ -48,5 +55,6 @@
 
 
 {{! comentário  }}
+// -->
 
 {{> footer}}

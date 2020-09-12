@@ -2,6 +2,7 @@ const mongoose = require("mongoose");
 const slug = require("slug");
 
 mongoose.Promise = global.Promise;
+const ObjectId = mongoose.Schema.Types.ObjectId;
 
 const postSchema = new mongoose.Schema({
 	oldSlug: String,
@@ -18,6 +19,10 @@ const postSchema = new mongoose.Schema({
 		required: "Campo orbigatório!",
 	},
 	tags: [String],
+	author: {
+		type: ObjectId,
+		ref: "User",
+	},
 });
 
 postSchema.pre("save", function (next) {
